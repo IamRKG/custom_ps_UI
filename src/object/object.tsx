@@ -3,9 +3,9 @@ import { io } from "socket.io-client";
 
 const Object = () => {
 
-    const [remoteURl, updateRemoteUrl] = useState("http://13.126.144.114");
+    const [remoteURl, updateRemoteUrl] = useState("http://13.234.219.0");
 
-    const socket = io("http://localhost:3000");
+    const socket = io("http://65.2.39.126:3001");
 
     let loadPS = function (remoteUrl: string) {
         updateRemoteUrl(remoteUrl)
