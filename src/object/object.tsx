@@ -5,7 +5,7 @@ const Object = () => {
 
     const [remoteURl, updateRemoteUrl] = useState("http://13.234.219.0");
 
-    const socket = io("http://65.2.39.126:3001");
+    const socket = io("http://52.66.207.203:3001");
 
     let loadPS = function (remoteUrl: string) {
         updateRemoteUrl(remoteUrl)
