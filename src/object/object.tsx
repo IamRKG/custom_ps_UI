@@ -5,15 +5,16 @@ const Object = () => {
 
     const [remoteURl, updateRemoteUrl] = useState("http://13.234.219.0");
 
-    const socket = io("http://52.66.207.203:3001");
+    const socket = io("http://15.206.5.15:3001/");
 
-    let loadPS = function (remoteUrl: string) {
+    let loadPS = function (remoteUrl:string) {
         updateRemoteUrl(remoteUrl)
     }
     
 
     socket.on("getURL", (remoteUrl) => {
-        loadPS(remoteUrl);
+        const psURL = JSON.parse(remoteUrl)
+        loadPS(psURL);
     })
 
     return (
