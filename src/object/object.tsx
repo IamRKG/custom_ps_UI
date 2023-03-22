@@ -13,9 +13,8 @@ const Object = () => {
     
 
     socket.on("getURL", (remoteUrl) => {
-        const [url] = JSON.parse(remoteUrl);
-        console.log(url);
-        loadPS(url);
+        const psURL = JSON.parse(remoteUrl)
+        loadPS(psURL.url);
     })
 
     return (
