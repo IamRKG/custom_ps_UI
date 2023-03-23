@@ -18,7 +18,7 @@ const Object = () => {
     })
 
     return (
-        <object height={500} width={800} type="text/html" data={remoteURl}></object>
+        <object height={800} width={1750} type="text/html" data={remoteURl}></object>
     )
 }
 
