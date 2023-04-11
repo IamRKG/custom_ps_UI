@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 
 const Object = () => {
 
-    const [remoteURl, updateRemoteUrl] = useState("http://13.234.219.0");
+    const [remoteURl, updateRemoteUrl] = useState("http://localhost:8082/");
 
     const socket = io("http://15.206.5.15:3001/");
 
@@ -18,7 +18,7 @@ const Object = () => {
     })
 
     return (
-        <object height={800} width={1750} type="text/html" data={remoteURl}></object>
+        <object className="frame" type="text/html" data={remoteURl}></object>
     )
 }
 
